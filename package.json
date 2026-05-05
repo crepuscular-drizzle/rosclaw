@@ -8,6 +8,7 @@
     "build": "pnpm -r build",
     "clean": "pnpm -r exec rm -rf dist tsconfig.tsbuildinfo",
     "lint": "pnpm -r lint",
+    "reproduce:rosbridge": "pnpm --filter @rosclaw/rosclaw exec tsc && node scripts/reproduce-rosbridge.mjs",
     "typecheck": "pnpm -r typecheck"
   },
   "engines": {
